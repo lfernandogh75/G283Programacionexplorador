@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tabla de Multiplicar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    input, button {
+      padding: 10px;
+      font-size: 16px;
+    }
+    #resultado {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Tabla de Multiplicar</h1>
+  <p>Escribe un número:</p>
+  <input type="number" id="numero" placeholder="Ej: 5">
+  <button onclick="mostrarTabla()">Mostrar Tabla</button>
+
+  <div id="resultado"></div>
+
+  <script>
+    function mostrarTabla() {
+      const numero = document.getElementById("numero").value;
+      const resultadoDiv = document.getElementById("resultado");
+
+      // Verifica si el valor es válido
+      if (numero === "") {
+        resultadoDiv.innerHTML = "<p style='color:red;'>Por favor ingresa un número.</p>";
+        return;
+      }
+
+      let resultado = `<h2>Tabla del ${numero}</h2>`;
+      for (let i = 1; i <= 10; i++) {
+        resultado += `<p>${numero} x ${i} = ${numero * i}</p>`;
+      }
+
+      resultadoDiv.innerHTML = resultado;
+    }
+  </script>
+
+</body>
+</html>

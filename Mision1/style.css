@@ -1,0 +1,68 @@
+/* Estilos generales del cuerpo de la página */
+body {
+    background-color: rgb(255, 255, 255); /* Fondo blanco */
+    color: black;                         /* Color del texto principal en negro */
+    font-family: Arial, sans-serif;       /* Fuente usada en toda la página */
+    text-align: center;                   /* Alineación centrada del texto */
+}
+
+/* Estilo para los párrafos */
+p {
+    color: rgb(7, 7, 29);                 /* Color azul muy oscuro para el texto del párrafo */
+    font-size: 12px;                      /* Tamaño de fuente pequeño */
+}
+
+/* Clase personalizada con texto en verde, tamaño 20px y negrita */
+.estilored {
+    color: rgb(0, 255, 13);               /* Color verde brillante */
+    font-size: 20px;                      /* Tamaño de fuente más grande */
+    font-weight: bold;                   /* Texto en negrita */
+}
+
+/* Estilo con ID: aplica azul al texto con características similares a .estilored */
+#estiloblue {
+    color: blue;                          /* Color azul para el texto */
+    font-size: 20px;                      /* Tamaño de fuente grande */
+    font-weight: bold;                   /* Texto en negrita */
+}
+
+/* Clase para estilo de texto en rojo, usada por ejemplo en títulos o alertas */
+.pad {
+    color: red;                           /* Color rojo para destacar */
+    font-size: 20px;                      /* Tamaño grande */
+    font-weight: bold;                   /* Negrita */
+}
+
+/* Clase para botones personalizados */
+.btn1 {
+    display: inline-block;                /* Elemento en línea pero con características de bloque */
+    font-weight: 400;                     /* Peso medio del texto */
+    color: #2ff;                          /* Color cian claro del texto */
+    text-align: center;                   /* Alineación centrada del texto dentro del botón */
+    vertical-align: middle;              /* Alineación vertical al medio */
+    user-select: none;                   /* El usuario no puede seleccionar el texto del botón */
+    background-color: #007bff;           /* Fondo azul */
+    border: 1px solid #007bff;           /* Borde del mismo color que el fondo */
+    padding: 0.376rem 0.75rem;           /* Espaciado interno arriba/abajo y lados */
+    font-size: 1rem;                     /* Tamaño de fuente base */
+    line-height: 1.5;                    /* Altura de línea */
+    border-radius: 0.25rem;              /* Bordes ligeramente redondeados */
+    transition: background-color 0.15s ease-in-out,
+                border-color 0.15s ease-in-out,
+                box-shadow 0.15s ease-in-out; /* Transiciones suaves para cambios de estilo */
+    cursor: pointer;                     /* Cursor en forma de mano al pasar sobre el botón */
+    text-decoration: none;               /* Sin subrayado (por si es un enlace) */
+}
+
+/* Estilo del botón al pasar el cursor encima */
+.btn1:hover {
+    background-color: #0056b3;           /* Cambia el fondo a un azul más oscuro */
+    border-color: #0056b3;               /* También cambia el borde */
+    color: white;                        /* El texto cambia a blanco */
+}
+
+/* Estilo del botón cuando recibe foco (por tabulación o clic) */
+.btn1:focus {
+    outline: none;                       /* Elimina el borde por defecto del navegador */
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25); /* Agrega una sombra azul clara alrededor */
+}

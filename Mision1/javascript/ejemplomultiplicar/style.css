@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  input, button {
+    padding: 10px;
+    font-size: 16px;
+    margin: 5px;
+  }
+  
+  #resultado {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
+  #resultado p {
+    margin: 3px 0;
+  }
+  
+  .error {
+    color: red;
+  }
+  
