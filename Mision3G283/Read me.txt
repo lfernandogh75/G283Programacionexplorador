@@ -1,0 +1,7 @@
+/////Ejecucion/////
+En terminal ejecutar
+    python -m http.server
+
+Una vez ejecutado el comando
+Pegar este link en la barra de navegacion
+    http://localhost:8000/

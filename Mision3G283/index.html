@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Visualización de la Transición Energética Justa utilizando datos globales de 1965 a 2022">
+    <title>Transición Energética Justa</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="imagen/icono.png">
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Transición Energética Justa</h1>
+        <p>Explora los datos globales de energía renovable (1965-2022).</p>
+    </header>
+    <div class="contenedor">
+        <div class="intro_fil">
+            <!-- Sección: Introducción -->
+            <section id="intro">
+                <h2>¿Qué es la Transición Energética Justa?</h2>
+                <p>Una transición justa reconoce, por lo tanto, que los aspectos medioambientales, sociales y económicos
+                    están íntimamente vinculados y sólo pueden atenderse de manera integral. Por ende, una transición
+                    justa debe, por ejemplo, buscar vías para aumentar y complementar la política energética y
+                    climática, a la vez que garantiza las futuras oportunidades de empleo para aquellos que podrían
+                    verse afectados por los cambios causados por su implementación. Una transición justa significa
+                    lograr que la economía sea lo más justa e inclusiva posible, creando oportunidades de trabajo
+                    decente, sin dejar a nadie atrás. (CEPAL)<br>
+
+                    La siguiente grafica nos muestra la produccion de energia renovable entre los años 1965 a 2022:
+                </p>
+            </section>
+            <!-- Sección: Filtros por Tipo de Energía -->
+            <section id="filtros">
+                <h3>Filtrar por tipo de energía:</h3>
+                <div class="botones">
+                    <div class="boton-imagen">
+
+                        <button id="hidroele" onclick="mostrarTipo('hidro')">Hidroeléctrica</button>
+                        <img id="imagen-hidro" class="imagen-tipo" src="imagen/Hidraulica.jpg" alt="Hidroeléctrica">
+                    </div>
+
+                    <div class="boton-imagen">
+                        <button id="solar" onclick="mostrarTipo('solar')">Solar</button>
+                        <img id="imagen-solar" class="imagen-tipo" src="imagen/Solar.webp" alt="Solar">
+                    </div>
+
+                    <div class="boton-imagen">
+                        <button id="eolica" onclick="mostrarTipo('eolica')">Eólica</button>
+                        <img id="imagen-eolica" class="imagen-tipo" src="imagen/Eolica.jpg" alt="Eólica">
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <!-- Sección: Gráfica de Energía Renovable -->
+        <section id="grafico">
+                <h2>Producción de Energía Renovable (1965-2022)</h2>
+                <canvas id="energiaChart" width="2000"></canvas><br>
+                <p>Como se observa en el grafico hay una aumento en la produccion de energia renovable a lo largo de tiempo, permitiendo asi una mejora en la proteccion del medio ambiente y una transcion energetica justa, asi mismp podemos observar que la produccion en energia Hidroeléctrica es mas alta que las otras energias</p>
+        </section>
+
+ 
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2025 Proyecto Transición Energética Justa</p>
+    </footer>
+    <!--  la librería Chart.js hace la gráfica interactiva  -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Archivo JS -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

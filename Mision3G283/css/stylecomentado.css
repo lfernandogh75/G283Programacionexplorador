@@ -1,0 +1,40 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Tipografía base del sitio */
+    margin: 0; /* Elimina el margen por defecto */
+    padding: 0; /* Elimina el padding por defecto */
+    color: #333; /* Color de texto base gris oscuro */
+    min-height: 100vh; /* Altura mínima de toda la ventana del navegador */
+    position: relative; /* Necesaria para posicionamiento absoluto de elementos hijos */
+    padding-bottom: 60px; /* Espacio inferior para no tapar contenido con el footer */
+    box-sizing: border-box; /* Incluye padding y border dentro del tamaño total */
+    background-image: url('../imagen/VeniceAI_VmdDRT7.png'); /* Imagen de fondo */
+    background-size: cover; /* Hace que la imagen cubra todo el fondo */
+    background-position: center; /* Centra la imagen de fondo */
+    background-repeat: repeat; /* Repite la imagen si es necesario */
+}
+header {
+    background-color: #4caf4fa2; /* Color de fondo semitransparente */
+    background-image: url('../imagen/imgenca.png'); /* Imagen decorativa de fondo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: black; /* Color del texto */
+    padding: 20px; /* Espaciado interior */
+    text-align: center; /* Centra el texto */
+    font-size: 18px; /* Tamaño del texto */
+}
+
+
+header h1 {
+    margin: 0; /* Elimina el margen del título */
+}
+#intro {
+    padding: 20px; /* Espacio interno */
+    background-color: #ffffffbe; /* Fondo blanco semitransparente */
+    margin: 10px; /* Separación del borde del contenedor */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px forestgreen; /* Sombra decorativa */
+    text-align: justify; /* Justifica el texto */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}

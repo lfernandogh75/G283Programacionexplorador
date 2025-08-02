@@ -1,0 +1,165 @@
+/* General */
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 60px;
+    box-sizing: border-box;
+    background-image: url('../imagen/VeniceAI_VmdDRT7.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+}
+
+/* Encabezado */
+header {
+    background-color: #4caf4fa2;
+    background-image: url('../imagen/imgenca.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Sección de Introducción */
+#intro {
+    padding: 20px;
+    background-color: #ffffffbe;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 10px forestgreen;
+    text-align: justify;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}
+
+/* Gráfica */
+#grafico {
+    padding: 40px;
+    background-color: #ffffffbe;
+    margin: 10px;
+    border-radius: 15px;
+    text-align: center;
+    justify-items: center;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 48%;
+    height: 48%;
+    font-size: 18px;
+}
+
+/* Filtros */
+#filtros {
+    padding: 20px;
+    /* background-color: #ffffffbe; */
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 10px forestgreen;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;      
+}
+
+#filtros button:hover {
+    background-color: #eeeff8;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+    width: 90%;
+    padding: 25px;
+}
+
+.intro_fil {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width: max-content;
+}
+
+#hidroele {
+    background-color: rgb(31, 97, 240);
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#solar {
+    background-color: rgb(238, 219, 46);
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#eolica {
+    background-color: rgb(82, 196, 29);
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.botones {
+    margin-bottom: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+.imagen-tipo {
+    width: 200px;
+    margin-top: 10px;
+    border-radius: 8px;
+    display: block;
+    margin: 10px auto;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    display: none;
+}
+
+.boton-imagen {
+    position: relative;
+    margin: 20px;
+}
+
+h3 {
+    margin-bottom: auto;
+}
+
+
